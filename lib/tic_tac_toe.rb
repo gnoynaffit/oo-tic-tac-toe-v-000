@@ -48,12 +48,13 @@ class TicTacToe
     end
     index = input_to_index(input)
     if valid_move?(index)
-      move(index, current_player)
+      move(index, X)
       display_board
     else
       turn
     end
   end
+
   def input_to_index(input)
     input.to_i - 1
   end
